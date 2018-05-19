@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <div class="header"style=""><!--<h1>Speed Reading</h1>--></div>
+    <div style="width:100%;height:64px; background-color: white; margin-top: 32px; padding: 15px 0; border: 2px solid black">
+    <h2 id='ShowText' value=" " data-toggle="modal" data-target="#myModal">> Text start here <</h2>
+  </div>
+
+    <div class="container">
+      <div class="all-div row justify-content-md-center">
+        <div class="col-md-8"> <!--textarea-->
+          <textarea id="MyText" name="name" rows="10" cols="54" onchange="estimateTime()" placeholder="Enter text here"></textarea>
+        </div>
+        <div class="speed-div col-md-8"> <!--speed-->
+          <h5>Speed <input id="Speed" type="number" name="" value="300" onchange="estimateTime()"> words per minute</h5>
+        </div>
+        <div class="chunks-div col-md-8"> <!--chunks-->
+          <h5>Chunks <input id="Chunks" type="number" name="" value="1" max="20" min="1"></h5>
+        </div>
+        <div class="button-div col-md-8"> <!--button-->
+          <button class="btn btn-primary col-md-12" id="startButton" type="button" name="button" onclick="startReading()"><h3 style="color: white ; white-space: normal;">Start training!</h3></button>
+        </div>
+        <div class="col-md-8"> <!--time-->
+          <h5 id="Time" >0.0 sec</h5>
+        </div>
+      </div>
+      <div class=""> <!--card-->
+        <h2 id='ShowText' value=" " data-toggle="modal" data-target="#myModal"> </h2>
+      </div>
+    </div>
+
+
+
+
+
+
+  </body>
+
+  <script type="text/javascript">
+  </script>
+
+  <script type="text/javascript" src='script.js'></script>
+</html>
